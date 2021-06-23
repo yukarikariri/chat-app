@@ -8,7 +8,6 @@ Bundler.require(*Rails.groups)
 
 module ChatApp
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
     # Settings in config/environments/* take precedence over those specified here.
@@ -21,5 +20,6 @@ module ChatApp
       g.javascripts false
       g.helper false
       g.test_framework false
+    end
   end
 end
