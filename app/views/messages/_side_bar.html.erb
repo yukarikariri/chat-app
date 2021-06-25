@@ -1,6 +1,6 @@
 <div class= "upper-side-bar">
   <div class= "login-user">
-    <a href="#">TOM</a>
+    <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
   <div class="make-chatroom">
     <a href ="#">チャットを作成する</a>
