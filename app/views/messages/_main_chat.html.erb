@@ -9,29 +9,8 @@
 </div>
 
 <div class = "middle-main-area">
-  <div class = "upper-message">
-    <div class = "user-name">Tom
-    </div>
-    <div class = "timestamp">2021/03/31(Wed) 12:43:30
-    </div>
-  </div>
-  <div class ="lower-message">
-    <div class = "message">おはよう
-    </div>
-  </div>
-
-    <div class = "upper-message">
-    <div class = "user-name">John
-    </div>
-    <div class = "timestamp">2021/03/31(Wed) 13:43:30
-    </div>
-  </div>
-  <div class ="lower-message">
-    <div class = "message">Hello
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
-
 
 <%= form_with model: [@room, @message], class: 'bottom-main-area', local: true do |f| %>
   <div class="input-message">
